@@ -30,7 +30,7 @@ class WP_Expired_Transients {
 	public function hooks() {
 
 		add_action( 'init', array( $this, 'purge' ),1 );
-		add_action( 'admin_notices', array( $this, 'notices' ) );
+		//add_action( 'admin_notices', array( $this, 'notices' ) );
 	}
 
 	public function notices() {
